@@ -8,9 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#4B86FC",
+        secondary: "#75F2F6",
+      },
       backgroundImage: {
         bg: "url('/bg.jpeg')",
       },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],
