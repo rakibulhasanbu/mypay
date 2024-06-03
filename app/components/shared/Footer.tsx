@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { GradientShadow } from "./gradient-shadow";
 
 const Footer = () => {
     const footerLinks = [
@@ -69,7 +70,8 @@ const Footer = () => {
     ];
 
     return (
-        <div className="px-4 container lg:px-0">
+        <div className="px-4 pt-10 bg-transparent container lg:px-0 relative">
+            {/* <GradientShadow className="-top-[5%] absolute right-[10%]" /> */}
             <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                 <div className="md:max-w-md lg:col-span-2">
                     <Link

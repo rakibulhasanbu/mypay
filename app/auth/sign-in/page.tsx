@@ -9,12 +9,12 @@ const SignIn = () => {
             <AuthWrapper>
                 <LoginForm />
                 <p className="text-xs sm:text-sm tracking-[-2%] text-[#2a3547]">
-                    Nouveau sur MyPay?&nbsp;
+                    Welcome to MyPay?&nbsp;
                     <Link
                         href="/auth/sign-up"
                         className="font-semibold tracking-[-1%] text-[#5d87ff] font-sans"
                     >
-                        Créer un compte
+                        Create an account
                     </Link>
                 </p>
             </AuthWrapper>

@@ -16,22 +16,22 @@ export const AuthWrapper: FC<IChildren> = ({ children }) => {
   return (
     <section className="relative w-fit md:h-full lg:w-full max-w-[1199px] mx-auto rounded-2xl sm:rounded-3xl lg:rounded-[30px] bg-[#f3f3f3] p-4 sm:p-6 lg:p-3 lg:px-[14px] flex flex-col md:flex-row justify-center lg:justify-start items-center gap-5 lg:gap-12 xl:gap-[95px]">
       <AuthCard />
-      <div className="text-[#2a3547] w-full max-w-[460px] space-y-4 sm:space-y-6 lg:space-y-8">
+      <div className="text-[#2a3547] w-full max-w-full space-y-4 sm:space-y-6 lg:space-y-8">
         <div className="text-[#2a3547]">
           <h1 className="text-xl sm:text-[30px] leading-[36px] tracking-[-1%] font-semibold font-sans">
-            Bienvenue sur MyPay
+            Create an account
           </h1>
           <p className="pt-0.5 sm:pt-3 text-sm sm:text-base tracking-[-2%]">
-            Votre admin panel
+            Create account to access assets
           </p>
         </div>
 
         <div className="flex justify-center items-center gap-2 lg:gap-4 flex-wrap">
           <SocialButton img="/google.png">
-            Créer&nbsp;avec&nbsp;Google
+            Create&nbsp;with&nbsp;Google
           </SocialButton>
           <SocialButton img="/fb-color.png">
-            Créer&nbsp;avec&nbsp;Facebook
+            Create&nbsp;with&nbsp;Facebook
           </SocialButton>
         </div>
         <div className="flex justify-center items-center gap-3">

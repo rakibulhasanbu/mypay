@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/shared/Navbar";
 import Footer from "./components/shared/Footer";
+import { AbsoluteImg } from "./components/shared/absolute-img";
+import { GradientShadow } from "./components/shared/gradient-shadow";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-bg bg-no-repeat`}>
-        <div className='bg-black/75 min-h-screen'>
+      <body className={`${inter.className}`}>
+        <div className='bg-[#00020D] relative min-h-screen px-4 md:px-0'>
+          <GradientShadow className="top-[5%] left-[8.4%]" />
+          <GradientShadow className="top-[5%] right-[10%]" />
           <Navbar />
           <div>{children}</div>
           <Footer />

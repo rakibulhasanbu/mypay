@@ -27,7 +27,7 @@ export const LoginForm = () => {
         <div className="space-y-4 sm:space-y-6 lg:space-y-8">
           <AuthInput name="email" type="email" label="Email" />
           <div className="space-y-2 sm:space-y-4">
-            <AuthInput label="Mot de passe" type="password" name="password" />
+            <AuthInput label="Password" type="password" name="password" />
             <div className="flex justify-between items-center text-xs sm:text-sm">
               <label className="flex items-center cursor-pointer gap-2">
                 <input type="checkbox" className="peer hidden" />
@@ -61,11 +61,11 @@ export const LoginForm = () => {
                 </svg>
 
                 <span className="text-[#2a3547]">
-                  Se rappeler de cet appareil
+                  Remember this device
                 </span>
               </label>
               <Link href="/forgot-password" className="text-[#5d87ff]">
-                Mot de passe oublié ?
+                Forgot your password?
               </Link>
             </div>
           </div>
@@ -74,7 +74,7 @@ export const LoginForm = () => {
             type="submit"
             className="w-full rounded-lg py-3 bg-[#5d87ff] text-center font-semibold text-base text-white"
           >
-            Se connecter
+            Sign in
           </button>
         </div>
       </Form>
