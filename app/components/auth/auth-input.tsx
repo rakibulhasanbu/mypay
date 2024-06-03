@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
 import { Field } from "formik";
 import { FC } from "react";
-import { ILoginValues, ISignUpValues } from ".";
+import { ILoginValues } from "./login-form";
+import { ISignUpValues } from "./sign-up-form";
 
 export interface IAuthInput extends IClassName {
   label: string;
